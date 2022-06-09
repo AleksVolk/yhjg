@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Благотворительный фонд "Ашан"</title>
+    <link href="./style/normalize.css" rel="stylesheet">
+    <link href="./style/main.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=88fd579d-8eac-43ae-a76d-2b2f706eccab&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+
+
+<section class="site-map">
+    <div class="site-map__wrapper">
+        <div class="site-map__content">
+            <div class="site-map__close-button"></div>
+            <div class="site-map__title title-first">Карта сайта</div>
+            <ul class="site-map__columns">
+                <li class="site-map__column">
+                    <a href="./about.html" class="site-map__column-title link title-second"><span>О фонде</span></a>
+                    <a href="./about-tab1.html" class="site-map__column-point text link"><span>Система управления деятельностью фонда</span></a>
+                    <a href="./reqs.html" class="site-map__column-point text link"><span>Реквизиты фонда</span></a>
+                    <a href="./statements.html" class="site-map__column-point text link"><span>Отчет о деятельности фонда</span></a>
+                </li>
+                <li class="site-map__column">
+                    <a href="./donate.html" class="site-map__column-title link title-second"><span>Сделать пожертвование</span></a>
+                    <a href="./donate.html" class="site-map__column-point text link"><span>Пожертвовать онлайн</span></a>
+                    <a href="./donate.html" class="site-map__column-point text link"><span>Перевод на счет</span></a>
+                </li>
+                <li class="site-map__column">
+                    <a href="./need-help.html" class="site-map__column-title link title-second"><span>Получить помощь</span></a>
+                    <a href="./programms.html" class="site-map__column-title link title-second"><span>Наши проекты</span></a>
+                    <a href="./contacts.html" class="site-map__column-title link title-second"><span>Контакты</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__close-button"></div>
+            <a href="./index.html" class="mobile-menu__logo">
+                <img src="../img/logo.svg" width="145" height="64">
+            </a>
+            <div class="mobile-menu__buttons-holder">
+                <a href="./need-help.html" class="mobile-menu__button mobile-menu__button--need-help button button--white">
+                    <span class="button__icon">
+
+                    </span>
+                    <span class="header__button-text button__text title-fourth">Нужна помощь</span>
+                </a>
+                <a href="./donate.html" class="mobile-menu__button mobile-menu__button--want-help button button--green">
+                    <span class="button__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="ml" fill="#ffffff" fill-rule="evenodd" d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2C6.485 2 2 6.485 2 12s4.485 10 10 10zm0-22c6.627 0 12 5.373 12 12s-5.373 12-12 12C5.372 24 0 18.627 0 12S5.372 0 12 0zm1.84 10.93c.711 0 1.29-.58 1.29-1.291 0-.712-.579-1.291-1.29-1.291h-2.634v2.581h2.633zm0-4.669a3.381 3.381 0 0 1 3.377 3.378 3.381 3.381 0 0 1-3.378 3.377h-2.633v.884h1.837a1.043 1.043 0 1 1 0 2.087h-1.837v1.896a1.044 1.044 0 0 1-2.087 0v-1.896H7.573a1.043 1.043 0 1 1 0-2.087H9.12v-.884H7.573a1.043 1.043 0 1 1 0-2.087H9.12V7.304c0-.576.467-1.043 1.043-1.043h3.677z"/>
+                        </svg>
+                    </span>
+                    <span class="button__text title-fourth">Хочу помочь</span>
+                </a>
+            </div>
+            <ul class="mobile-menu__navigation">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__nav-link mobile-menu__nav-link--current title-fourth" href="./about.html">О фонде</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__nav-link title-fourth" href="./projects.html">Наши проекты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__nav-link title-fourth" href="./contacts.html">Контакты</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__nav-link link-search title-fourth" href="">Поиск</a>
+                </li>
+            </ul>
+
+            <footer class="mobile-menu__footer footer footer--mobile-menu">
+                <div class="footer__wrapper">
+                    <div class="footer__content">
+
+
+                        <div class="footer__social social social--mobile-menu">
+                            <ul class="social__list">
+                                <li class="social__item social__item--vk">
+                                    <a href=""></a>
+                                </li>
+                                <li class="social__item social__item--ok">
+                                    <a href=""></a>
+                                </li>
+                                <li class="social__item social__item--yt">
+                                    <a href=""></a>
+                                </li>
+                                <li class="social__item social__item--fb">
+                                    <a href=""></a>
+                                </li>
+                                <li class="social__item social__item--tw">
+                                    <a href=""></a>
+                                </li>
+                                <li class="social__item social__item--im">
+                                    <a href=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__bottom-content">
+                            <div class="footer__bottom-left">
+                                <div class="footer__copyright">Поколение АШАН © 2019</div>
+                            </div>
+                            <div class="footer__bottom-center">
+                                <ul class="footer__payment-system">
+                                    <li class="footer__payment-item footer__payment-item--visa">
+                                        <a href=""></a>
+                                    </li>
+
+                                    <li class="footer__payment-item footer__payment-item--mastercard">
+                                        <a href=""></a>
+                                    </li>
+
+                                    <li class="footer__payment-item footer__payment-item--mir">
+                                        <a href=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__bottom-right">
+                                <div class="footer__map-link">
+                                    <a href="">Карта сайта</a>
+                                </div>
+                                <a href="http://peachdesign.ru/" class="footer__author">
+                                    <span class="footer__author-made">Сделано в</span>
+                                    <span class="footer__author-logo">
+
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</section>
+
+<section class="search">
+    <div class="search__wrapper">
+        <div class="search__content">
+            <div class="search__close-button"></div>
+            <div class="search__title-container">
+                <h1 class="search__title title-first">Поиск по сайту</h1>
+            </div>
+            <form method="" action="" class="search__form">
+                <div class="search__input-container">
+                    <label class="search__label" for="search"></label>
+                    <input id="search" class="search__input text" placeholder="Введите Ваш запрос">
+                    <button class="search__link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#000000" fill-rule="nonzero" d="M20.529 20.529a1 1 0 0 1-1.414.005L14.86 16.31a6.818 6.818 0 1 1 1.42-1.409l4.244 4.214a1 1 0 0 1 .005 1.414zm-9.71-4.893a4.818 4.818 0 1 0 0-9.636 4.818 4.818 0 0 0 0 9.636z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="search__button-reset-holder">
+                    <button type="reset" class="search__reset-button text text--footernote">Cбросить</button>
+                </div>
+            </form>
+            <!--<div class="search__no-results text">По Вашему запросу ничего не найдено</div>-->
+            <div class="search__results-container">
+                <div class="search__results-title">
+                    <h2 class="search__results-head title-second">Результаты поиска</h2>
+                    <p class="search__results-text text text--footernote">Найдено <span>30 совпадений</span></p>
+                </div>
+                <ul class="search__results">
+                    <li>
+                        <a href="">
+                            <span class="search__item-head title-third">«Сладких дел мастер. Новые горизонты» штурмует Липецк!</span>
+                            <span class="search__item-text text">... получила благотворительную <b>помощь</b>
+на реализацию профессиональных навыков
+в размере 5000 рублей...</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="search__item-head title-third">О фонде</span>
+                            <span class="search__item-text text">... С момента открытия первого гипермаркета АШАН оказывает <b>помощь</b> детским домам, поддерживает благотворительные инициативы фондов...</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="search__item-head title-third">Школа для всех!</span>
+                            <span class="search__item-text text">
+                                ... Любая, даже небольшая <b>помощь</b> – это большой подарок для каждого ребенка. Давайте вместе поможем ребятам подготовиться…</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="search__item-head title-third">Соберем детей в школу вместе!</span>
+                            <span class="search__item-text text">... получила благотворительную <b>помощь</b>
+на реализацию профессиональных навыков
+в размере 5000 рублей...</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="search__item-head title-third">«Кулинарное искусство»</span>
+                            <span class="search__item-text text">... Мы надеемся, что данная <b>помощь</b> принесет пользу и поможет детям в дальнейшем увереннее чувствовать себя в социуме…</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="search__item-head title-third">Благотворительный фонд “Поколение АШАН”подвел итоги деятельности за 2017 год.</span>
+                            <span class="search__item-text text">... Таким образом, нам удалось оказать <b>помощь</b> более 34000 детей, сделав их счастливее...</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="search__button-holder">
+                    <a class="search__ajax-button button button--white-green title-fourth" href="">
+                        <span>Показать ещё</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header__wrapper width-wrapper">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="./index.html">
+                        <img src="../img/logo.svg" width="145" height="64">
+                    </a>
+                </div>
+
+                <nav class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <!--модификатор для текущей активной страницы header__nav-link--current -->
+                        <li><a class="header__nav-link header__nav-link--current title-fourth" href="./about.html">О фонде</a></li>
+                        <li><a class="header__nav-link title-fourth" href="./projects.html">Наши проекты</a></li>
+                        <li><a class="header__nav-link title-fourth" href="./contacts.html">Контакты</a></li>
+                        <li><a class="header__nav-link link-search title-fourth" href="">Поиск</a></li>
+                    </ul>
+                </nav>
+                <div class="header__buttons-content">
+                    <div class="header__buttons-holder">
+                        <a href="./need-help.html" class="header__button header__button--need-help button button--white button--header">
+                        <span class="button__icon">
+
+                        </span>
+                            <span class="header__button-text button__text">Нужна помощь</span>
+                        </a>
+                        <a href="./donate.html" class="header__button header__button--want-help button button--green button--header">
+                        <span class="button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path class="ml" fill="#ffffff" fill-rule="evenodd" d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2C6.485 2 2 6.485 2 12s4.485 10 10 10zm0-22c6.627 0 12 5.373 12 12s-5.373 12-12 12C5.372 24 0 18.627 0 12S5.372 0 12 0zm1.84 10.93c.711 0 1.29-.58 1.29-1.291 0-.712-.579-1.291-1.29-1.291h-2.634v2.581h2.633zm0-4.669a3.381 3.381 0 0 1 3.377 3.378 3.381 3.381 0 0 1-3.378 3.377h-2.633v.884h1.837a1.043 1.043 0 1 1 0 2.087h-1.837v1.896a1.044 1.044 0 0 1-2.087 0v-1.896H7.573a1.043 1.043 0 1 1 0-2.087H9.12v-.884H7.573a1.043 1.043 0 1 1 0-2.087H9.12V7.304c0-.576.467-1.043 1.043-1.043h3.677z"/>
+                            </svg>
+                        </span>
+                            <span class="button__text">Хочу помочь</span>
+                        </a>
+                        <button class="header__button header__button--burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="header__tablet-content">
+                        <ul class="header__navigation-list header__navigation-list--tablet">
+                            <!--модификатор для текущей активной страницы header__nav-link--current -->
+                            <li><a class="header__nav-link header__nav-link--current title-fourth" href="./about.html">О фонде</a></li>
+                            <li><a class="header__nav-link title-fourth" href="./projects.html">Наши проекты</a></li>
+                            <li><a class="header__nav-link title-fourth" href="./contacts.html">Контакты</a></li>
+                            <li><a class="header__nav-link link-search title-fourth" href="">Поиск</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main class="fhf">
+    <div class="fhf__wrapper width-wrapper">
+        <div class="fhf__content">
+
+            <div class="fhf__title-container">
+                <h1 class="fhf__title title-first">Страница не найдена</h1>
+                <p class="fhf__title-text text">Попробуйте обновить страницу или вернуться на главную страницу</p>
+            </div>
+
+            <div class="fhf__main">
+                <p class="fhf__main-numbers">404</p>
+            </div>
+
+            <div class="fhf__button-holder">
+                <a href="./index.html" class="fhf__button button button--white-green">
+                    <span class="fhf__button-text title-fourth">На главную</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+</div>
+
+<footer class="footer">
+    <div class="footer__wrapper width-wrapper">
+        <div class="footer__content">
+            <div class="footer__top-content">
+                <div class="footer__top-left">
+                    <div class="footer__top-left-block">
+                        <p class="footer__text text text--footer">Россия, г. Москва, 107140,</p>
+                        <p class="footer__text text text--footer">ул. Верхняя Красносельская, д. 3А</p>
+                    </div>
+                    <div class="footer__top-left-block">
+                        <p class="footer__text text"><a href="tel:84957212091">+7 (495) 721 2091</a></p>
+                        <p class="footer__text text"><a href="mailto:infopokolenie@gmail.com">infopokolenie@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="footer__top-center">
+                    <div class="footer__top-center-block">
+                        <p class="footer__text text text--footer">Некоммерческая организация Благотворительный фонд «Поколение Ашан»</p>
+                    </div>
+                    <div class="footer__top-center-block">
+                        <p class="footer__text text text--footer">ИНН 7708240080</p>
+                        <p class="footer__text text text--footer">ОГРН 1117799009349</p>
+                    </div>
+                </div>
+                <div class="footer__top-right">
+                    <form class="footer__search-form">
+                        <div class="footer__search-container">
+                            <label class="footer__search-label" for="footer-search"></label>
+                            <input id="footer-search" class="footer__search-input" placeholder="Поиск по сайту">
+                            <a href="" class="footer__search-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#FFF" fill-rule="nonzero" d="M20.529 20.529a1 1 0 0 1-1.414.005L14.86 16.31a6.818 6.818 0 1 1 1.42-1.409l4.244 4.214a1 1 0 0 1 .005 1.414zm-9.71-4.893a4.818 4.818 0 1 0 0-9.636 4.818 4.818 0 0 0 0 9.636z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </form>
+                    <div class="footer__social social">
+                        <ul class="social__list">
+                            <li class="social__item social__item--vk">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--ok">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--yt">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--fb">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--tw">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--im">
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom-content">
+                <div class="footer__bottom-left">
+                    <div class="footer__copyright">Поколение АШАН © 2019</div>
+                </div>
+                <div class="footer__bottom-center">
+                    <ul class="footer__payment-system">
+                        <li class="footer__payment-item footer__payment-item--visa">
+                            <a href=""></a>
+                        </li>
+
+                        <li class="footer__payment-item footer__payment-item--mastercard">
+                            <a href=""></a>
+                        </li>
+
+                        <li class="footer__payment-item footer__payment-item--mir">
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom-right">
+                    <div class="footer__map-link">
+                        <a href="">Карта сайта</a>
+                    </div>
+                    <a href="http://peachdesign.ru/" class="footer__author">
+                        <span class="footer__author-made">Сделано в</span>
+                        <span class="footer__author-logo">
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../../js/vendors.js"></script>
+<script type="text/javascript" src="../../js/main.js"></script>
+
+</body>
+</html>

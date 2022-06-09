@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Благотворительный фонд "Ашан"</title>
+    <link href="./style/normalize.css" rel="stylesheet" />
+    <link href="./style/main.css" rel="stylesheet" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=88fd579d-8eac-43ae-a76d-2b2f706eccab&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+<!--     <script
+      type="text/javascript"
+      src="../../js/keyshapejs-1.0.0.min.js"
+    ></script> -->
+  </head>
+  <body>
+    <div class="success-message">
+      <div class="success-message__mask"></div>
+      <div class="success-message__wrapper">
+        <div class="success-message__content">
+          <div class="success-message__close-button"></div>
+          <div class="success-message__icon"></div>
+          <div class="success-message__text title-second">
+            Ваше сообщение<br />
+            успешно отправлено!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="site-map">
+      <div class="site-map__wrapper">
+        <div class="site-map__content">
+          <div class="site-map__close-button"></div>
+          <div class="site-map__title title-first">Карта сайта</div>
+          <ul class="site-map__columns">
+            <li class="site-map__column">
+              <a
+                href="./about.html"
+                class="site-map__column-title link title-second"
+                ><span>О фонде</span></a
+              >
+              <a
+                href="./about-tab1.html"
+                class="site-map__column-point text link"
+                ><span>Система управления деятельностью фонда</span></a
+              >
+              <a href="./reqs.html" class="site-map__column-point text link"
+                ><span>Реквизиты фонда</span></a
+              >
+              <a
+                href="./statements.html"
+                class="site-map__column-point text link"
+                ><span>Отчет о деятельности фонда</span></a
+              >
+            </li>
+            <li class="site-map__column">
+              <a
+                href="./donate.html"
+                class="site-map__column-title link title-second"
+                ><span>Сделать пожертвование</span></a
+              >
+              <a href="./donate.html" class="site-map__column-point text link"
+                ><span>Пожертвовать онлайн</span></a
+              >
+              <a href="./donate.html" class="site-map__column-point text link"
+                ><span>Перевод на счет</span></a
+              >
+            </li>
+            <li class="site-map__column">
+              <a
+                href="./need-help.html"
+                class="site-map__column-title link title-second"
+                ><span>Получить помощь</span></a
+              >
+              <a
+                href="./programms.html"
+                class="site-map__column-title link title-second"
+                ><span>Наши проекты</span></a
+              >
+              <a
+                href="./contacts.html"
+                class="site-map__column-title link title-second"
+                ><span>Контакты</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-menu">
+      <div class="mobile-menu__mask"></div>
+      <div class="mobile-menu__wrapper">
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__close-button"></div>
+          <a href="./index.html" class="mobile-menu__logo">
+            <img src="../img/logo.svg" width="145" height="64" />
+          </a>
+          <div class="mobile-menu__buttons-holder">
+            <a
+              href="./need-help.html"
+              class="mobile-menu__button mobile-menu__button--need-help button button--white"
+            >
+              <span class="button__icon"> </span>
+              <span class="header__button-text button__text title-fourth"
+                >Нужна помощь</span
+              >
+            </a>
+            <a
+              href="./donate.html"
+              class="mobile-menu__button mobile-menu__button--want-help button button--green"
+            >
+              <span class="button__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    class="ml"
+                    fill="#ffffff"
+                    fill-rule="evenodd"
+                    d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2C6.485 2 2 6.485 2 12s4.485 10 10 10zm0-22c6.627 0 12 5.373 12 12s-5.373 12-12 12C5.372 24 0 18.627 0 12S5.372 0 12 0zm1.84 10.93c.711 0 1.29-.58 1.29-1.291 0-.712-.579-1.291-1.29-1.291h-2.634v2.581h2.633zm0-4.669a3.381 3.381 0 0 1 3.377 3.378 3.381 3.381 0 0 1-3.378 3.377h-2.633v.884h1.837a1.043 1.043 0 1 1 0 2.087h-1.837v1.896a1.044 1.044 0 0 1-2.087 0v-1.896H7.573a1.043 1.043 0 1 1 0-2.087H9.12v-.884H7.573a1.043 1.043 0 1 1 0-2.087H9.12V7.304c0-.576.467-1.043 1.043-1.043h3.677z"
+                  />
+                </svg>
+              </span>
+              <span class="button__text title-fourth">Хочу помочь</span>
+            </a>
+          </div>
+          <ul class="mobile-menu__navigation">
+            <li class="mobile-menu__item">
+              <a
+                class="mobile-menu__nav-link mobile-menu__nav-link--current title-fourth"
+                href="./about.html"
+                >О фонде</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a
+                class="mobile-menu__nav-link title-fourth"
+                href="./projects.html"
+                >Наши проекты</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a
+                class="mobile-menu__nav-link title-fourth"
+                href="./contacts.html"
+                >Контакты</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__nav-link link-search title-fourth" href=""
+                >Поиск</a
+              >
+            </li>
+          </ul>
+
+          <footer class="mobile-menu__footer footer footer--mobile-menu">
+            <div class="footer__wrapper">
+              <div class="footer__content">
+                <div class="footer__social social social--mobile-menu">
+                  <ul class="social__list">
+                    <li class="social__item social__item--vk">
+                      <a href=""></a>
+                    </li>
+                    <li class="social__item social__item--ok">
+                      <a href=""></a>
+                    </li>
+                    <li class="social__item social__item--yt">
+                      <a href=""></a>
+                    </li>
+                    <li class="social__item social__item--fb">
+                      <a href=""></a>
+                    </li>
+                    <li class="social__item social__item--tw">
+                      <a href=""></a>
+                    </li>
+                    <li class="social__item social__item--im">
+                      <a href=""></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__bottom-content">
+                  <div class="footer__bottom-left">
+                    <div class="footer__copyright">Поколение АШАН © 2019</div>
+                  </div>
+                  <div class="footer__bottom-center">
+                    <ul class="footer__payment-system">
+                      <li
+                        class="footer__payment-item footer__payment-item--visa"
+                      >
+                        <a href=""></a>
+                      </li>
+
+                      <li
+                        class="footer__payment-item footer__payment-item--mastercard"
+                      >
+                        <a href=""></a>
+                      </li>
+
+                      <li
+                        class="footer__payment-item footer__payment-item--mir"
+                      >
+                        <a href=""></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer__bottom-right">
+                    <div class="footer__map-link">
+                      <a href="">Карта сайта</a>
+                    </div>
+                    <a href="http://peachdesign.ru/" class="footer__author">
+                      <span class="footer__author-made">Сделано в</span>
+                      <span class="footer__author-logo"> </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <section class="search">
+      <div class="search__mask"></div>
+      <div class="search__wrapper">
+        <div class="search__content">
+          <div class="search__close-button"></div>
+          <div class="search__title-container">
+            <h1 class="search__title title-first">Поиск по сайту</h1>
+          </div>
+          <form method="" action="" class="search__form">
+            <div class="search__input-container">
+              <label class="search__label" for="search"></label>
+              <input
+                id="search"
+                class="search__input text"
+                placeholder="Введите Ваш запрос"
+              />
+              <button class="search__link-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#000000"
+                    fill-rule="nonzero"
+                    d="M20.529 20.529a1 1 0 0 1-1.414.005L14.86 16.31a6.818 6.818 0 1 1 1.42-1.409l4.244 4.214a1 1 0 0 1 .005 1.414zm-9.71-4.893a4.818 4.818 0 1 0 0-9.636 4.818 4.818 0 0 0 0 9.636z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="search__button-reset-holder">
+              <button
+                type="reset"
+                class="search__reset-button text text--footernote"
+              >
+                Cбросить
+              </button>
+            </div>
+          </form>
+          <!--<div class="search__no-results text">По Вашему запросу ничего не найдено</div>-->
+          <div class="search__results-container">
+            <div class="search__results-title">
+              <h2 class="search__results-head title-second">
+                Результаты поиска
+              </h2>
+              <p class="search__results-text text text--footernote">
+                Найдено <span>30 совпадений</span>
+              </p>
+            </div>
+            <ul class="search__results">
+              <li>
+                <a href="">
+                  <span class="search__item-head title-third"
+                    >«Сладких дел мастер. Новые горизонты» штурмует
+                    Липецк!</span
+                  >
+                  <span class="search__item-text text"
+                    >... получила благотворительную <b>помощь</b> на реализацию
+                    профессиональных навыков в размере 5000 рублей...</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="search__item-head title-third">О фонде</span>
+                  <span class="search__item-text text"
+                    >... С момента открытия первого гипермаркета АШАН оказывает
+                    <b>помощь</b> детским домам, поддерживает благотворительные
+                    инициативы фондов...</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="search__item-head title-third"
+                    >Школа для всех!</span
+                  >
+                  <span class="search__item-text text">
+                    ... Любая, даже небольшая <b>помощь</b> – это большой
+                    подарок для каждого ребенка. Давайте вместе поможем ребятам
+                    подготовиться…</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="search__item-head title-third"
+                    >Соберем детей в школу вместе!</span
+                  >
+                  <span class="search__item-text text"
+                    >... получила благотворительную <b>помощь</b> на реализацию
+                    профессиональных навыков в размере 5000 рублей...</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="search__item-head title-third"
+                    >«Кулинарное искусство»</span
+                  >
+                  <span class="search__item-text text"
+                    >... Мы надеемся, что данная <b>помощь</b> принесет пользу и
+                    поможет детям в дальнейшем увереннее чувствовать себя в
+                    социуме…</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="search__item-head title-third"
+                    >Благотворительный фонд “Поколение АШАН”подвел итоги
+                    деятельности за 2017 год.</span
+                  >
+                  <span class="search__item-text text"
+                    >... Таким образом, нам удалось оказать <b>помощь</b> более
+                    34000 детей, сделав их счастливее...</span
+                  >
+                </a>
+              </li>
+            </ul>
+            <div class="search__button-holder">
+              <a
+                class="search__ajax-button button button--white-green title-fourth"
+                href=""
+              >
+                <span>Показать ещё</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper width-wrapper">
+          <div class="header__content">
+            <div class="header__logo">
+              <a href="./index.html">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="../img/logo-mobile.svg" type="image/svg+xml">
+                  <source media="(min-width: 768px)" srcset="../img/logo.svg" type="image/svg+xml">
+                  <img src="img/logo.svg"  />
+                </picture>
+              </a>
+            </div>
+
+            <nav class="header__navigation">
+              <ul class="header__navigation-list">
+                <!--модификатор для текущей активной страницы header__nav-link--current -->
+                <li>
+                  <a class="header__nav-link js-header__nav-link--dropdown header__nav-link--current title-fourth" href="#">
+                    Главная 
+										<span class="header__nav-icon-dropdown">
+                      <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.75L6.625 6.25L12.25 1.75" stroke="#008F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </a>
+                  <ul class="header__nav-dropdown js-header__nav-dropdown">
+                    <li>
+                      <a href="./reqs.html" class="header__nav-dropdown-link header__nav-dropdown-link--current">Реквизиты</a>
+                    </li>
+                    <li>
+                      <a href="./statements.html" class="header__nav-dropdown-link">Отчеты</a>
+                    </li>
+                    <li>
+                      <a href="./about-tab1.html" class="header__nav-dropdown-link">Система управления</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="header__nav-link title-fourth" href="./programms.html">Программы</a>
+                </li>
+                <li>
+                  <a
+                    class="header__nav-link title-fourth" href="./projects.html" >Проекты</a>
+                </li>
+                <li>
+                  <a class="header__nav-link title-fourth" href="./contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- button -->
+            <div class="header__buttons-search-social">
+              <a href="#" class="link-search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.4434 16.4438L20.9997 21.0002" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+<!--               <a href="#" class="link-instagram link-instagram--header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.125 3.375H7.875C5.38972 3.375 3.375 5.38972 3.375 7.875V16.125C3.375 18.6103 5.38972 20.625 7.875 20.625H16.125C18.6103 20.625 20.625 18.6103 20.625 16.125V7.875C20.625 5.38972 18.6103 3.375 16.125 3.375Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.875 8.0625C17.3928 8.0625 17.8125 7.64277 17.8125 7.125C17.8125 6.60723 17.3928 6.1875 16.875 6.1875C16.3572 6.1875 15.9375 6.60723 15.9375 7.125C15.9375 7.64277 16.3572 8.0625 16.875 8.0625Z" fill="black"/>
+                  <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_197_2068)"/>
+                  <path d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z" stroke="white" stroke-width="1.2" stroke-miterlimit="10"/>
+                  <path d="M14.75 6.25H9.25C7.59315 6.25 6.25 7.59315 6.25 9.25V14.75C6.25 16.4069 7.59315 17.75 9.25 17.75H14.75C16.4069 17.75 17.75 16.4069 17.75 14.75V9.25C17.75 7.59315 16.4069 6.25 14.75 6.25Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.25 9.5C15.6642 9.5 16 9.16421 16 8.75C16 8.33579 15.6642 8 15.25 8C14.8358 8 14.5 8.33579 14.5 8.75C14.5 9.16421 14.8358 9.5 15.25 9.5Z" fill="white"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_197_2068" x1="0.0801848" y1="-0.0400922" x2="3.74702e-07" y2="23.9599" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#7024C4"/>
+                      <stop offset="0.415461" stop-color="#C21975"/>
+                      <stop offset="0.702206" stop-color="#C74C4D"/>
+                      <stop offset="1" stop-color="#E09B3D"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a> -->
+            </div>
+            <div class="header__buttons-content">
+              <div class="header__buttons-holder">
+                <a
+                  href="./need-help.html"
+                  class="header__button header__button--need-help button button--white button--header"
+                >
+                  <span class="button__icon"> </span>
+                  <span class="header__button-text button__text"
+                    >Нужна помощь</span
+                  >
+                </a>
+                <a
+                  href="./donate.html"
+                  class="header__button header__button--want-help button button--green button--header"
+                >
+                  <span class="button__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        class="ml"
+                        fill="#ffffff"
+                        fill-rule="evenodd"
+                        d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2C6.485 2 2 6.485 2 12s4.485 10 10 10zm0-22c6.627 0 12 5.373 12 12s-5.373 12-12 12C5.372 24 0 18.627 0 12S5.372 0 12 0zm1.84 10.93c.711 0 1.29-.58 1.29-1.291 0-.712-.579-1.291-1.29-1.291h-2.634v2.581h2.633zm0-4.669a3.381 3.381 0 0 1 3.377 3.378 3.381 3.381 0 0 1-3.378 3.377h-2.633v.884h1.837a1.043 1.043 0 1 1 0 2.087h-1.837v1.896a1.044 1.044 0 0 1-2.087 0v-1.896H7.573a1.043 1.043 0 1 1 0-2.087H9.12v-.884H7.573a1.043 1.043 0 1 1 0-2.087H9.12V7.304c0-.576.467-1.043 1.043-1.043h3.677z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="button__text">Хочу помочь</span>
+                </a>
+                <button class="header__button header__button--burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div class="header__tablet-content">
+                <ul
+                  class="header__navigation-list header__navigation-list--tablet"
+                >
+                  <!--модификатор для текущей активной страницы header__nav-link--current -->
+                  <li>
+                    <a
+                      class="header__nav-link js-header__nav-link--dropdown header__nav-link--current title-fourth" href="#">
+                      О фонде
+                      <span class="header__nav-icon-dropdown">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.75L6.625 6.25L12.25 1.75" stroke="#008F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </a>
+                    <ul class="header__nav-dropdown js-header__nav-dropdown">
+                      <li>
+                        <a href="./reqs.html" class="header__nav-dropdown-link header__nav-dropdown-link--current">Реквизиты</a>
+                      </li>
+                      <li>
+                        <a href="./statements.html" class="header__nav-dropdown-link">Отчеты</a>
+                      </li>
+                      <li>
+                        <a href="./about-tab1.html" class="header__nav-dropdown-link">Система управления</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="header__nav-link title-fourth"
+                      href="./programms.html"
+                      >Программы</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="header__nav-link title-fourth"
+                      href="./projects.html"
+                      >Проекты</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="header__nav-link title-fourth"
+                      href="./contacts.html"
+                      >Контакты</a
+                    >
+                  </li>
+<!--                   <li>
+                    <a class="header__nav-link link-search title-fourth" href=""
+                      >Поиск</a
+                    >
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+<!--     </div>
+  </body>
+</html> -->
+
+<main class="main">
+
+    <section class="about-intro">
+        <div class="about-intro__wrapper">
+            <div class="about-intro__content">
+                <h1 class="about__title page-top__title title-first">Благотворительный фонд «Поколение АШАН»</h1>
+                <div class="about-intro__content-appeal">Объединив усилия, мы сможем помочь многим детям и молодым людям, столкнувшимся с трудностями.</div>
+            </div>
+            <div class="about-intro__img">
+                
+                <div class="main-slider__image-container">
+                    <div class="main-slider__image main-slider__image--mobile" style="background-image: url('img/img-about-intro-mob.jpg')">
+                    </div>
+
+                    <div class="main-slider__image main-slider__image--tablet">
+                        <svg width="380" height="473" viewBox="0 0 380 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="image11" patternUnits="userSpaceOnUse" width="380" height="473">
+                                    <image xlink:href="img/img-about-intro.jpg" x="0" y="0" width="380" height="473"></image>
+                                </pattern>
+                            </defs>
+                            <g id="Page-11" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="11" fill="url(#image11)">
+  
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M520.599 462.997C319.855 389.685 281.159 432.674 155.903 447.835C30.6475 462.997 -60.5535 383.753 49.3724 314.165C159.298 244.576 56.7529 166.582 111.269 103.17C165.786 39.7581 239.643 129.14 403.342 26.4858C480.283 -21.7629 610.635 -2.83307 660.788 73.0107C735.752 186.373 721.342 536.309 520.599 462.997Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="main-slider__image main-slider__image--desktop">
+                        <svg class="main-slider__svg" width="950px" height="680px" viewBox="0 0 950 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <pattern id="image2" patternUnits="userSpaceOnUse" width="948" height="947">
+                                    <!-- <image xlink:href="../img/slider-image2--mobile-min.png" x="0" y="0" width="1302" height="866"></image> -->
+                                    <!-- <image xlink:href="img/img-about-intro.jpg" x="0" y="0" width="948" height="947"></image> -->
+                                    <image xlink:href="img/img-about-intro-1(5)x.png" x="0" y="0" width="972" height="971"></image>
+                                </pattern>
+                            </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="1" fill="url(#image2)">
+                                    <!-- class="path" -->
+                                    <path class="path" d="M703.54,625.78 C432.53,526.8 380.35,584.83 211.19,605.31 C42.04,625.79 -81.03,518.79 67.38,424.84 C215.79,330.89 77.34,225.61 150.95,139.99 C224.56,54.37 324.25,175.09 545.24,36.47 C649.11,-28.67 825.08,-3.11 892.78,99.27 C993.99,252.33 974.54,724.75 703.54,625.78 Z" id="Path"></path>
+                                </g>
+                            </g>
+                        </svg>
+
+        <!--                 <svg width="760" height="473" viewBox="0 0 380 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M520.599 462.997C319.855 389.685 281.159 432.674 155.903 447.835C30.6475 462.997 -60.5535 383.753 49.3724 314.165C159.298 244.576 56.7529 166.582 111.269 103.17C165.786 39.7581 239.643 129.14 403.342 26.4858C480.283 -21.7629 610.635 -2.83307 660.788 73.0107C735.752 186.373 721.342 536.309 520.599 462.997Z" fill="#7580F7"/>
+                        </svg> -->
+
+                    </div>
+
+                    <div class="main-slider__svg-holder main-slider__svg-holder--decorate11">
+                        <svg width="260px" height="170px" viewBox="0 0 260 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <path class="path" d="M99.2834014,150.954055 C-46.6073064,154.113456 18.6944474,-6.81252965 161.214463,21.2978675 C303.734478,49.4082647 245.174109,147.794655 99.2834014,150.954055 Z" id="path-1"></path>
+                                <filter x="-7.7%" y="-9.4%" width="115.5%" height="126.3%" filterUnits="objectBoundingBox" id="filter-2">
+                                    <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                    <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                    <feColorMatrix values="0 0 0 0 0.976470588   0 0 0 0 0.647058824   0 0 0 0 0.101960784  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                                </filter>
+                            </defs>
+                            <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Mask-Copy">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use fill="#F9A51A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="main-slider__svg-holder main-slider__svg-holder--decorate12">
+
+                        <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.515 0.949901C-0.242039 -4.44073 -7.82017 23.9801 10.1975 27.8694C28.2152 31.7586 39.2721 6.34053 19.515 0.949901Z" fill="#F9A51A"/>
+                        </svg>
+
+                    </div>
+
+                    <div class="main-slider__svg-holder main-slider__svg-holder--decorate13">
+
+                        <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7582 0.601341C-0.489733 -2.77256 -5.10294 20.8323 7.07934 23.9791C19.2616 27.1258 26.0061 3.97525 12.7582 0.601341Z" fill="#F9A51A"/>
+                        </svg>
+
+                    </div>
+
+                    <div class="main-slider__svg-holder main-slider__svg-holder--decorate14">
+                        
+                        <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.515 0.949901C-0.242039 -4.44073 -7.82017 23.9801 10.1975 27.8694C28.2152 31.7586 39.2721 6.34053 19.515 0.949901Z" fill="#F9A51A"/>
+                        </svg>
+                    </div>
+
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="about__page-top page-top">
+        <div class="about__block-wrapper page-top__wrapper page-top__wrapper--flex">
+                <div class="page-top__navigation">
+                    <h2 class="about__title">О фонде</h2>
+                    <ul class="tabs__list tabs__list--page">
+                        <!-- <li class="tabs__tab"><a href="./programms.html" class="title-fourth">Программы</a></li> -->
+                        <li class="tabs__tab"><a href="./reqs.html" class="title-fourth">Реквизиты</a></li>
+                        <li class="tabs__tab"><a href="./statements.html" class="title-fourth">Отчёты</a></li>
+                         <li class="tabs__tab"><a href="./about-tab1.html" class="title-fourth">Система управления</a></li>
+                    </ul>
+                </div>
+                <div class="page-top__main-text">
+                    <p class="page-top__text text text--article">С момента открытия первого гипермаркета «Ашан» оказывает помощь детским домам, поддерживает благотворительные инициативы фондов и общественных организаций, находящихся в городах присутствия компании.</p>
+                    <p class="page-top__text text text--article"> Чтобы ввести отдельные благотворительные инициативы в единое русло, сделать помощь максимально эффективной и финансово прозрачной компания «Ашан» в 2011 году учредила благотворительный  фонд  «Поколение Ашан».</p>
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
+
+    <section class="about__bottom-block">
+
+        <div class="about__bottom-wrapper">
+            <div class="about__head-image">
+                <!--<img src="../img/about-head-min&#45;&#45;4k.jpg">-->
+            </div>
+
+            <div class="about__bottom-content">
+                <div class="about__bottom-text">
+                    <p class="about__text quote">Когда мы говорим об ответственности, мы имеем ввиду и социальную ответственность бизнеса, когда предприятие, осуществляя свою основную деятельность, делает всё возможное, чтобы сократить негативное влияние на экологию, помочь людям в решении различных проблем, подготовить будущее для наших детей. Ради этого работаем и мы – фонд «Поколение Ашан».
+                    </p>
+                </div>
+                <div class="about__mobile-image">
+                </div>
+                <div class="about__br"></div>
+                <div class="about__name title-sub">ТРУБИЦЫНА ЮЛИЯ</div>
+                <div class="about__position text text--footernote">Директор БФ «Поколение АШАН»</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects projects--about">
+        <div class="projects__wrapper">
+            <div class="projects__content swiper-container">
+                <div class="projects__title-container title" data-aos="fade" data-aos-duration="1000">
+                    <div class="title-first title__head">Наши проекты</div>
+                    <a href="projects.html" class="title__button button button--white button--small button--reverse">
+                        <span class="button__text title-fourth">Все проекты</span>
+                        <span class="button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path class="ml" fill="#008f4c" fill-rule="evenodd" d="M9 7.65a.64.64 0 0 1 .112-.36.674.674 0 0 1 .922-.18l6.67 4.349a.642.642 0 0 1 0 1.082l-6.67 4.35a.676.676 0 0 1-.369.109.658.658 0 0 1-.665-.65v-8.7z"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <ul class="projects__list swiper-wrapper">
+                    <li class="projects__item swiper-slide" data-aos="fade" data-aos-delay="50" data-aos-duration="1000">
+                        <a href="project.html" class="projects__link">
+                            <span class="projects__image-container">
+
+                                <svg class="projects__svg-mask projects__svg-mask--1" width="360px" height="280px" viewBox="0 0 360 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <path class="path" d="M50.2277923,78.3482952 C-6.00765665,132.325629 50.2277923,251.291673 154.204075,256.854513 C258.180358,262.417354 357.491569,106.924531 326.108475,52.9471969 C294.725381,-1.03013695 106.463241,24.3709613 50.2277923,78.3482952 Z" id="projects-mask1"></path>
+                                        <filter x="-5.8%" y="-5.3%" width="111.5%" height="115.0%" filterUnits="objectBoundingBox" id="filter-2">
+                                            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.560784314   0 0 0 0 0.298039216  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                                        </filter>
+                                    </defs>
+                                    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Mask">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                            <use fill="#008F4C" fill-rule="evenodd" xlink:href="#projects-mask1"></use>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg class="projects__svg" width="304px" height="234px" viewBox="0 0 304 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <pattern id="projects1" patternUnits="userSpaceOnUse" width="539" height="358">
+                                        <image class="projects__svg-hover" xlink:href="img/our-projects1-min.png" x="-175" y="-50" width="539" height="358"></image>
+                                    </pattern>
+                                    <defs>
+                                            <path d="M22.2277923,55.3482952 C-34.0076566,109.325629 22.2277923,228.291673 126.204075,233.854513 C230.180358,239.417354 329.491569,83.9245307 298.108475,29.9471969 C266.725381,-24.0301369 78.4632413,1.37096134 22.2277923,55.3482952 Z" id="path-projects1"></path>
+                                    </defs>
+                                    <g id="WEB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="MAIN" transform="translate(-119.000000, -880.000000)">
+                                            <g id="Group-2" transform="translate(119.000000, 880.000000)">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-projects1"></use>
+                                                </mask>
+                                                <g fill="url(#projects1)">
+                                                    <use id="Mask" fill="#projects1" xlink:href="#path-projects1"></use>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </span>
+                            <span class="projects__signature">
+                                <span class="projects__item-title title-second">Физкультура для каждого</span>
+                                <span class="projects__item-content">Физкультура для каждого Учреждение Государственное областное автономное общеобразовательное учреждение «Центр образования, реабилитации и оздоровления»</span>
+                                <span class="projects__item-location text text--footernote">г. Челябинск</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="projects__item swiper-slide" data-aos="fade" data-aos-delay="50" data-aos-duration="1000">
+                        <a href="project.html" class="projects__link">
+                            <span class="projects__image-container">
+
+                                <svg class="projects__svg-mask projects__svg-mask--2" width="420px" height="280px" viewBox="0 0 420 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <path class="path" d="M158.352622,250.92331 C-86.9503382,256.196896 22.8490709,-12.4164029 262.484495,34.5047112 C502.119919,81.4258252 403.655582,245.649724 158.352622,250.92331 Z" id="projects-p2"></path>
+                                        <filter x="-4.6%" y="-5.6%" width="109.2%" height="115.8%" filterUnits="objectBoundingBox" id="filter-2">
+                                            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                            <feColorMatrix values="0 0 0 0 0.976470588   0 0 0 0 0.647058824   0 0 0 0 0.101960784  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                                        </filter>
+                                    </defs>
+                                    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Mask">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                            <use fill="#F9A51A" fill-rule="evenodd" xlink:href="#projects-p2"></use>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg class="projects__svg" width="380px" height="222px" viewBox="0 0 380 222" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <pattern id="projects2" patternUnits="userSpaceOnUse" width="539" height="358">
+                                        <image class="projects__svg-hover" xlink:href="img/our-projects2-min.png" x="-75" y="-65" width="539" height="358"></image>
+                                    </pattern>
+                                    <defs>
+                                        <path d="M138.352622,221.92331 C-106.950338,227.196896 2.84907089,-41.4164029 242.484495,5.50471118 C482.119919,52.4258252 383.655582,216.649724 138.352622,221.92331 Z" id="path-projects2"></path>
+                                    </defs>
+                                    <g id="WEB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="MAIN" transform="translate(-511.000000, -892.000000)">
+                                            <g id="Group-3" transform="translate(511.000000, 892.000000)">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-projects2"></use>
+                                                </mask>
+                                                <g fill="url(#projects2)">
+                                                    <use id="Mask" fill="#projects2" xlink:href="#path-projects2"></use>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="projects__signature">
+                                <span class="projects__item-title title-second">Талант в каждом</span>
+                                <span class="projects__item-content">Учреждение Бюджетное учреждение Омской области «Центр психолого-медико-социального сопровождения»</span>
+                                <span class="projects__item-location text text--footernote">г. Челябинск</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="projects__item swiper-slide" data-aos="fade" data-aos-delay="150" data-aos-duration="1000">
+                        <a href="project.html" class="projects__link">
+                            <span class="projects__image-container">
+
+                                <svg class="projects__svg-mask projects__svg-mask--3" width="420px" height="280px" viewBox="0 0 420 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <path class="path" d="M177.037226,243.382813 C14.9940867,278.82773 -30.5896793,100.095241 78.5036622,51.7136183 C187.597004,3.33199591 339.080365,52.4491808 387.497103,108.134652 C435.913842,163.820123 339.080365,207.937895 177.037226,243.382813 Z" id="projects-p3"></path>
+                                        <filter x="-4.6%" y="-5.8%" width="109.2%" height="116.2%" filterUnits="objectBoundingBox" id="filter-2">
+                                            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                            <feColorMatrix values="0 0 0 0 0.42745098   0 0 0 0 0.807843137   0 0 0 0 0.960784314  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                                        </filter>
+                                    </defs>
+
+                                    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Mask">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                            <use fill="#6DCEF5" fill-rule="evenodd" xlink:href="#projects-p3"></use>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg class="projects__svg" width="382px" height="216px" viewBox="0 0 382 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <pattern id="projects3" patternUnits="userSpaceOnUse" width="539" height="358">
+                                            <image class="projects__svg-hover" xlink:href="img/our-projects3-min.png" x="-100" y="-100" width="539" height="358"></image>
+                                        </pattern>
+                                        <path d="M158.109412,210.99148 C-4.00774304,246.370778 -49.6123303,67.969176 59.5308416,19.6771225 C168.674013,-28.614931 320.226567,20.4113232 368.665421,75.9937039 C417.104274,131.576085 320.226567,175.612182 158.109412,210.99148 Z" id="path-projects3"></path>
+                                    </defs>
+                                    <g id="WEB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="MAIN" transform="translate(-979.000000, -901.000000)">
+                                            <g id="Group-4" transform="translate(979.000000, 901.000000)">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-projects3"></use>
+                                                </mask>
+                                                <g fill="url(#projects3)">
+                                                    <use id="Mask" fill="#projects3" xlink:href="#path-projects3"></use>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </span>
+                            <span class="projects__signature">
+                                <span class="projects__item-title title-second">Пожертвования клиентов</span>
+                                <span class="projects__item-content">Учреждение 12 организаций помощи детям, оказаавшимся в трудной жизненной ситуации</span>
+                                <span class="projects__item-location text text--footernote">Москва, МО, Ростов-на-Дону, Омск и Екатеренбург</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="projects__pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-projects other-projects--about">
+        <div class="other-projects__wrapper">
+            <div class="other-projects__content">
+                <div class="other-projects__list-container">
+                    <div class="other-projects__scroller">
+                        <ul class="other-projects__list">
+                            <li class="other-projects__item" data-aos="fade" data-aos-delay="200" data-aos-duration="1000">
+                                <a href="./project.html" class="other-projects__link">
+                                    <span class="other-projects__image-container">
+                                        <span class="other-projects__line other-projects__line--red"></span>
+                                        <!-- <span class="other-projects__image" style="background-image: url('../img/other-projects1-min.png')"></span> -->
+                                        <span class="other-projects__image" style="background-image: url('img/img-other-projects-1.jpg')"></span>
+                                    </span>
+                                    <span class="other-projects__signature">
+                                        <span class="other-projects__item-title title-third">Итоги благотворительной акции "Подари ребенку Новый год 2018"</span>
+                                        <span class="other-projects__item-location text text--footernote">все города присутствия компании Ашан Ритейл Россия</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="other-projects__item" data-aos="fade" data-aos-delay="250" data-aos-duration="1000">
+                                <a href="./project.html" class="other-projects__link">
+                                    <span class="other-projects__image-container">
+                                        <span class="other-projects__line other-projects__line--yellow"></span>
+                                        <!-- <span class="other-projects__image" style="background-image: url('../img/other-projects2-min.png')"></span> -->
+                                        <span class="other-projects__image" style="background-image: url('img/img-other-projects-2.jpg')"></span>
+                                    </span>
+                                    <span class="other-projects__signature">
+                                        <span class="other-projects__item-title title-third">Мы вместе</span>
+                                        <span class="other-projects__item-location text text--footernote">Борисоглебск</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="other-projects__item" data-aos="fade" data-aos-delay="300" data-aos-duration="1000">
+                                <a href="./project.html" class="other-projects__link">
+                                    <span class="other-projects__image-container">
+                                        <span class="other-projects__line other-projects__line--blue"></span>
+                                        <!-- <span class="other-projects__image" style="background-image: url('../img/other-projects3-min.png')"></span> -->
+                                        <span class="other-projects__image" style="background-image: url('img/img-other-projects-3.jpg')"></span>
+                                    </span>
+                                    <span class="other-projects__signature">
+                                        <span class="other-projects__item-title title-third">Дорога надежд</span>
+                                        <span class="other-projects__item-location text text--footernote">Самара</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="other-projects__item" data-aos="fade" data-aos-delay="350" data-aos-duration="1000">
+                                <a href="./project.html" class="other-projects__link">
+                                    <span class="other-projects__image-container">
+                                        <span class="other-projects__line other-projects__line--green"></span>
+                                        <!-- <span class="other-projects__image" style="background-image: url('../img/other-projects4-min.png')"></span> -->
+                                        <span class="other-projects__image" style="background-image: url('img/img-other-projects-4.jpg')"></span>
+                                    </span>
+                                    <span class="other-projects__signature">
+                                        <span class="other-projects__item-title title-third">Спорт - это дружба всех людей</span>
+                                        <span class="other-projects__item-location text text--footernote">село Обшаровка</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achieve achieve--about">
+        <div class="achieve__wrapper">
+            <div class="achieve__content">
+                <div class="achieve__title-container title">
+                    <div class="title__head title-first">Наши достижения</div>
+                    <a href="projects.html" class="title__button button button--small button--white button--reverse">
+                        <span class="button__text title-fourth">Смотреть отчёт</span>
+                        <span class="button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path class="ml" fill="#008f4c" fill-rule="evenodd" d="M9 7.65a.64.64 0 0 1 .112-.36.674.674 0 0 1 .922-.18l6.67 4.349a.642.642 0 0 1 0 1.082l-6.67 4.35a.676.676 0 0 1-.369.109.658.658 0 0 1-.665-.65v-8.7z"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="achieve__years tabs">
+                    <div class="tabs__scroller">
+                        <ul class="tabs__list">
+                            <li class="tabs__tab tabs__tab--active"><a href="" class="title-fourth">2021</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2020</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2019</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2018</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2017</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2016</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2015</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2014</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2013</a></li>
+                            <li class="tabs__tab"><a href="" class="title-fourth">2012</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="achieve__results">
+                   <li class="achieve__item" data-aos="fade" data-aos-duration="1000">
+                       <div class="achieve__item-ameoba achieve__item-ameoba--l-blue">
+                           <svg width="160px" height="100px" viewBox="0 0 160 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                               <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.801548549">
+                                   <path d="M18.0924153,72.8913923 C-14.7557328,35.0857139 58.3258292,8.21627789 130.701193,19.6649766 C203.076557,31.1136753 50.9405634,110.697071 18.0924153,72.8913923 Z" id="Path-9-Copy" fill="#6DCEF5"></path>
+                               </g>
+                           </svg>
+                       </div>
+                       <div class="achieve__item-number title-decorate">17 000</div>
+                       <div class="achieve__item-text">Детей <br>получили помощь</div>
+                   </li>
+                    <li class="achieve__item" data-aos="fade" data-aos-delay="50" data-aos-duration="1000">
+                        <div class="achieve__item-ameoba achieve__item-ameoba--green">
+      <!--                       <svg width="180px" height="100px" viewBox="0 0 180 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.801548549">
+                                    <path d="M11,33.9311873 C11,7.33703243 169,16.6317386 169,58.9098656 C169,86.4214372 121.942597,83.0439753 80.6606831,71.1611251 C35.3150142,58.1085378 11,45.9608404 11,33.9311873 Z" id="Path-10-Copy" fill="#008F4C"></path>
+                                </g>
+                            </svg> -->
+                            <svg width="158" height="61" viewBox="0 0 158 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.801549" fill-rule="evenodd" clip-rule="evenodd" d="M0 14.9312C0 -11.663 158 -2.36826 158 39.9099C158 67.4214 110.943 64.044 69.6607 52.1611C24.315 39.1085 0 26.9608 0 14.9312Z" fill="#008F4C"/>
+                            </svg>
+                        </div>
+                        <div class="achieve__item-number title-decorate">700</div>
+                        <div class="achieve__item-text">Сотрудников<br> волонтеров</div>
+                    </li>
+                    <li class="achieve__item" data-aos="fade" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="achieve__item-ameoba achieve__item-ameoba--orange">
+<!--                             <svg width="180px" height="100px" viewBox="0 0 180 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.801548549">
+                                    <path d="M23.6877495,51.9660955 C42.5104582,28.3698041 147.894596,13.0832942 156.149924,27.7640271 C164.405253,42.4447599 144.441959,67.1577051 108.066849,74.4796476 C71.6917378,81.80159 7.04291653,72.8321854 23.6877495,51.9660955 Z" id="Path-11-Copy" fill="#F9A51A"></path>
+                                </g>
+                            </svg> -->
+                            <svg width="153" height="73" viewBox="0 0 153 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.801549" fill-rule="evenodd" clip-rule="evenodd" d="M8.39001 5.5999C30.4828 -7.93591 132.719 4.43381 149.868 28.0537C167.016 51.6735 110.482 79.5123 59.908 71.639C9.33364 63.7657 -13.7028 19.1357 8.39001 5.5999Z" fill="#BCB3F3"/>
+                            </svg>
+                        </div>
+                        <div class="achieve__item-number title-decorate">183</div>
+                        <div class="achieve__item-text">Проектов реализовано на целевые средства (донор OOO «АШАН»)</div>
+                    </li>
+                    <li class="achieve__item" data-aos="fade" data-aos-delay="150" data-aos-duration="1000">
+                        <div class="achieve__item-ameoba achieve__item-ameoba--red">
+                            <!-- class="path" -->
+   <!--                          <svg width="180px" height="100px" viewBox="0 0 180 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.801548549">
+                                    <path d="M21.3900121,18.599902 C43.4828504,5.06409317 145.718997,17.4338114 162.867586,41.0536578 C180.016175,64.6735042 123.482271,92.5122971 72.9079567,84.6390149 C22.3336424,76.7657328 -0.702826072,32.1357108 21.3900121,18.599902 Z" id="Path-4-Copy-2" fill="#E4151B"></path>
+                                </g>
+                            </svg> -->
+
+                            <svg width="137" height="55" viewBox="0 0 137 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.801549" fill-rule="evenodd" clip-rule="evenodd" d="M2.68775 29.9661C21.5105 6.3698 126.895 -8.91671 135.15 5.76403C143.405 20.4448 123.442 45.1577 87.0668 52.4796C50.6917 59.8016 -13.9571 50.8322 2.68775 29.9661Z" fill="#F9A51A"/>
+                            </svg>
+
+                        </div>
+                        <div class="achieve__item-number title-decorate">25</div>
+                        <div class="achieve__item-text">Проектов реализовано на пожертвования клиентов</div>
+                    </li>
+                    <li class="achieve__item" data-aos="fade" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="achieve__item-ameoba achieve__item-ameoba--crimson">
+                           <!--<svg width="180px" height="100px" viewBox="0 0 180 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.801548549">
+                                    <path class="path" d="M23.6877495,51.9660955 C42.5104582,28.3698041 147.894596,13.0832942 156.149924,27.7640271 C164.405253,42.4447599 144.441959,67.1577051 108.066849,74.4796476 C71.6917378,81.80159 7.04291653,72.8321854 23.6877495,51.9660955 Z" id="Path-11-Copy" fill="#F9A51A"></path>
+                                </g>
+                            </svg> -->
+                            <svg width="153" height="73" viewBox="0 0 153 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.801549" fill-rule="evenodd" clip-rule="evenodd" d="M8.39001 5.5999C30.4828 -7.93591 132.719 4.43381 149.868 28.0537C167.016 51.6735 110.482 79.5123 59.908 71.639C9.33364 63.7657 -13.7028 19.1357 8.39001 5.5999Z" fill="#E4151B"/>
+                            </svg>
+                        </div>
+                        <div class="achieve__item-number title-decorate">86 462 500</div>
+                        <div class="achieve__item-text">Бюджет реализованных проектов</div>
+                    </li>
+                    <li class="achieve__item" data-aos="fade" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="achieve__item-ameoba achieve__item-ameoba--blue-frost">
+                            <!-- <svg width="180px" height="100px" viewBox="0 0 180 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.801548549">
+                                    <path class="path" d="M23.6877495,51.9660955 C42.5104582,28.3698041 147.894596,13.0832942 156.149924,27.7640271 C164.405253,42.4447599 144.441959,67.1577051 108.066849,74.4796476 C71.6917378,81.80159 7.04291653,72.8321854 23.6877495,51.9660955 Z" id="Path-11-Copy" fill="#F9A51A"></path>
+                                </g>
+                            </svg> -->
+                            <svg width="153" height="73" viewBox="0 0 153 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.801549" fill-rule="evenodd" clip-rule="evenodd" d="M8.39001 5.5999C30.4828 -7.93591 132.719 4.43381 149.868 28.0537C167.016 51.6735 110.482 79.5123 59.908 71.639C9.33364 63.7657 -13.7028 19.1357 8.39001 5.5999Z" fill="#B6E7FA"/>
+                            </svg>
+                        </div>
+                        <div class="achieve__item-number title-decorate">77 759 987</div>
+                        <div class="achieve__item-text">Бюджет реализованных проектов (денежные средства из 130 ящиков и 15 магазинов Москвы и обл.)</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="map map--about">
+        <div class="map__wrapper">
+            <div class="map__content">
+                <h2 class="map__title title-second">География деятельности</h2>
+                <form class="map__selects map-selects">
+                    <div class="map-selects__inputs-container">
+                        <div class="map-selects__select-container">
+                            <label class="map-selects__label text" for="select-region">В магазинах Ашан</label>
+                            <select class="map-selects__select map-selects__select--region" id="select-region">
+                                <option data-map="1">В магазинах Ашан</option>
+                                <option data-map="2">Москва</option>
+                                <option data-map="3">Санкт-Петербург</option>
+                                <option data-map="4">Центральная Россия</option>
+                                <option data-map="5">Сибирь</option>
+                                <option data-map="6">Юг</option>
+                                <option data-map="7">Дальний Восток</option>
+                            </select>
+                        </div>
+                        <div class="map-selects__select-container">
+                            <label class="map-selects__label text" for="select-target">Выберите проект</label>
+                            <select class="map-selects__select map-selects__select--target" id="select-target">
+                                <option data-coords="1">«Bon appetit»</option>
+                                <option data-coords="2">«Мечта олимпийца»</option>
+                                <option data-coords="3">«Полёт к совершенству»</option>
+                                <option data-coords="4">«Детство без ограничений»</option>
+                                <option data-coords="5">«Водолей»</option>
+                                <option data-coords="6">«Здесь живет надежда»</option>
+                                <option data-coords="7">«Спорт, бокс, дети»</option>
+                                <option data-coords="8">«Это место для игры, отдыха и спорта»</option>
+                                <option data-coords="9">«Спорт высоких достижений»</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="map-selects__button-holder">
+                        <button class="map-selects__reset-button text text--footernote" type="reset">Сбросить</button>
+                    </div>
+                </form>
+                <div class="map__container" id="map-projects">
+                    <!--<div>когда-нибудь здесь будет карта</div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form form--about">
+
+        <div class="form__wrapper width-wrapper">
+            <div class="form__content">
+                <form method="" action="">
+                    <h3 class="form__title title-second">Задайте нам вопрос</h3>
+                    <p class="form__preview-text">Вы можете отправить сообщение администрации БФ «Поколение Ашан» через форму обратной связи, которая располагается ниже.</p>
+                    <div class="form__inputs-holder">
+                        <!--класс для показа ошибки - form__label--with-error-->
+                        <!--класс для показа валидного поля - form__label--gj-->
+                        <label class="form__label" for="form-name">
+                            <span class="form__input-error">Представьтесь, пожалуйста</span>
+                            <span class="form__input-container">
+                                <input type="text" id="form-name" class="form__input form__input--required" required>
+                                <span class="form__input-placeholder">Укажите Ваше имя <span class="form__required-star">*</span></span>
+                            </span>
+                        </label>
+
+                        <label class="form__label" for="form-phone">
+                            <span class="form__input-error">Укажите e-mail, пожалуйста</span>
+                            <span class="form__input-container">
+                                <input type="text" id="form-name" class="form__input form__input--required" required>
+                                <span class="form__input-placeholder">E-mail <span class="form__required-star">*</span></span>
+                            </span>
+                        </label>
+
+                        <label class="form__label" for="form-phone">
+                            <span class="form__input-container">
+                                <input type="tel" id="form-phone" class="form__input">
+                                <span class="form__input-placeholder">+7 (900) 000-00-00</span>
+                            </span>
+                        </label>
+
+                        <label class="form__label" for="form-textarea">
+                            <span class="form__input-error">По какому вопросу обращаетесь?</span>
+                            <span class="form__input-container">
+                                <textarea id="form-textarea" class="form__input form__input--textarea form__input--required" required></textarea>
+                                <span class="form__input-placeholder">Текст вопроса <span class="form__required-star">*</span></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="form__button-holder">
+                        <button type="submit" class="form__submit-button button button--white-green">
+                            <span class="form__submit-button-text title-fourth">Отправить</span>
+                        </button>
+                    </div>
+                    <div class="form__politics">
+                        <p class="text text--footernote">Нажимая на кнопку, вы даете согласие
+                        на обработку персональных данных
+                            и соглашаетесь с <a href="" class="text text--footernote text--green">политикой конфиденциальности</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form__ask-form-mask">
+            <svg class="main__ask-form-small-svg" width="72px" height="60px" viewBox="0 0 72 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <pattern id="image-form-small" patternUnits="userSpaceOnUse" width="1078" height="716">
+                        <image xlink:href="img/mail-bg.jpg" x="500" y="500" width="1078" height="716"></image>
+                    </pattern>
+                </defs>
+                <g id="1" stroke="none" stroke-width="1" fill="url(#image-form)" fill-rule="evenodd">
+                    <path class="path-small" d="M15.523162,32.5057584 C38.2672995,-22.61848 73.3227021,30.4424518 50.6815987,44.8816801 C28.0418164,59.3209084 8.27378186,50.0752056 15.523162,32.5057584 Z" id="path-small" fill="url(#image-form)"></path>
+                </g>
+            </svg>
+
+            <svg class="main__ask-form-svg" width="950px" height="680px" viewBox="0 0 950 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <pattern id="image-form" patternUnits="userSpaceOnUse" width="1078" height="716">
+                        <image xlink:href="img/mail-bg.jpg" x="0" y="0" width="1078" height="716"></image>
+                    </pattern>
+                </defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="1" fill="url(#image-form)">
+                        <path class="path" d="M703.54,625.78 C432.53,526.8 380.35,584.83 211.19,605.31 C42.04,625.79 -81.03,518.79 67.38,424.84 C215.79,330.89 77.34,225.61 150.95,139.99 C224.56,54.37 324.25,175.09 545.24,36.47 C649.11,-28.67 825.08,-3.11 892.78,99.27 C993.99,252.33 974.54,724.75 703.54,625.78 Z" id="Path-form"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+</main>
+
+
+</div>
+
+<footer class="footer">
+    <div class="footer__wrapper width-wrapper">
+        <div class="footer__content">
+            <div class="footer__top-content">
+                <div class="footer__top-left">
+                    <div class="footer__top-left-block">
+                        <p class="footer__text text text--footer">Россия, г. Москва, 107140,</p>
+                        <p class="footer__text text text--footer">ул. Верхняя Красносельская, д. 3А</p>
+                    </div>
+                    <div class="footer__top-left-block">
+                        <p class="footer__text text"><a href="tel:84957212091">+7 (495) 721 2091</a></p>
+                        <p class="footer__text text"><a href="mailto:infopokolenie@gmail.com">infopokolenie@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="footer__top-center">
+                    <div class="footer__top-center-block">
+                        <p class="footer__text text text--footer">Некоммерческая организация Благотворительный фонд «Поколение Ашан»</p>
+                    </div>
+                    <div class="footer__top-center-block">
+                        <p class="footer__text text text--footer">ИНН 7708240080</p>
+                        <p class="footer__text text text--footer">ОГРН 1117799009349</p>
+                    </div>
+                </div>
+                <div class="footer__top-right">
+                    <form class="footer__search-form">
+                        <div class="footer__search-container">
+                            <label class="footer__search-label" for="footer-search"></label>
+                            <input id="footer-search" class="footer__search-input" placeholder="Поиск по сайту">
+                            <a href="" class="footer__search-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                    <path fill="#FFF" fill-rule="nonzero" d="M20.529 20.529a1 1 0 0 1-1.414.005L14.86 16.31a6.818 6.818 0 1 1 1.42-1.409l4.244 4.214a1 1 0 0 1 .005 1.414zm-9.71-4.893a4.818 4.818 0 1 0 0-9.636 4.818 4.818 0 0 0 0 9.636z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </form>
+<!--                     <div class="footer__social social">
+                          <a href="#" class="link-instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.125 3.375H7.875C5.38972 3.375 3.375 5.38972 3.375 7.875V16.125C3.375 18.6103 5.38972 20.625 7.875 20.625H16.125C18.6103 20.625 20.625 18.6103 20.625 16.125V7.875C20.625 5.38972 18.6103 3.375 16.125 3.375Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.875 8.0625C17.3928 8.0625 17.8125 7.64277 17.8125 7.125C17.8125 6.60723 17.3928 6.1875 16.875 6.1875C16.3572 6.1875 15.9375 6.60723 15.9375 7.125C15.9375 7.64277 16.3572 8.0625 16.875 8.0625Z" fill="black"/>
+                              <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_197_2068)"/>
+                              <path d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z" stroke="white" stroke-width="1.2" stroke-miterlimit="10"/>
+                              <path d="M14.75 6.25H9.25C7.59315 6.25 6.25 7.59315 6.25 9.25V14.75C6.25 16.4069 7.59315 17.75 9.25 17.75H14.75C16.4069 17.75 17.75 16.4069 17.75 14.75V9.25C17.75 7.59315 16.4069 6.25 14.75 6.25Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M15.25 9.5C15.6642 9.5 16 9.16421 16 8.75C16 8.33579 15.6642 8 15.25 8C14.8358 8 14.5 8.33579 14.5 8.75C14.5 9.16421 14.8358 9.5 15.25 9.5Z" fill="white"/>
+                              <defs>
+                                <linearGradient id="paint0_linear_197_2068" x1="0.0801848" y1="-0.0400922" x2="3.74702e-07" y2="23.9599" gradientUnits="userSpaceOnUse">
+                                  <stop stop-color="#7024C4"/>
+                                  <stop offset="0.415461" stop-color="#C21975"/>
+                                  <stop offset="0.702206" stop-color="#C74C4D"/>
+                                  <stop offset="1" stop-color="#E09B3D"/>
+                                </linearGradient>
+                              </defs>
+                            </svg>
+                          </a>
+                        <ul class="social__list">
+                            <li class="social__item social__item--vk">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--ok">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--yt">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--fb">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--tw">
+                                <a href=""></a>
+                            </li>
+                            <li class="social__item social__item--im">
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer__bottom-content">
+                <div class="footer__bottom-left">
+                    <div class="footer__copyright">Поколение АШАН © 2019</div>
+                </div>
+                <div class="footer__bottom-center">
+                    <ul class="footer__payment-system">
+                        <li class="footer__payment-item footer__payment-item--visa">
+                            <a href=""></a>
+                        </li>
+
+                        <li class="footer__payment-item footer__payment-item--mastercard">
+                            <a href=""></a>
+                        </li>
+
+                        <li class="footer__payment-item footer__payment-item--mir">
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom-right">
+                    <div class="footer__map-link">
+                        <a href="">Карта сайта</a>
+                    </div>
+                    <a href="http://peachdesign.ru/" class="footer__author">
+                        <span class="footer__author-made">Сделано в</span>
+                        <span class="footer__author-logo">
+
+                        </span>
+                    </a>
+                    <div class="footer__political">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#"> Политика НКО БФ «Поколение АШАН» в области обработки и защиты персональных данных</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom-servises text text--footer">Этот сайт защищен reCAPTCHA и применяются <a href="#">Политика конфиденциальности</a> и <a href="#">Условия обслуживания Google</a></div>
+        </div>
+    </div>
+</footer>
+
+<!-- <script type="text/javascript" src="../../js/vendors.js"></script> -->
+<!-- <script type="text/javascript" src="../../js/main.js"></script> -->
+<script type="text/javascript" src="js/vendors.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
